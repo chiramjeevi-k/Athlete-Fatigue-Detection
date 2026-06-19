@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 st.set_page_config(
-    page_title="Athlete Fatigue Risk Prediction",
+    page_title="Athlete Fatigue Risk Detection System",
     page_icon="🏃",
     layout="wide"
 )
@@ -14,14 +14,14 @@ with st.sidebar:
     st.title("About Project")
 
     st.write("""
-    Athlete Fatigue Risk Prediction System
+    Athlete Fatigue Risk Detection System
 
     This application uses Machine Learning
-    to predict athlete fatigue risk using
-    physiological and training metrics.
+    to detect athlete fatigue risk using
+    sensor and training metrics.
     """)
 
-    st.markdown("### Model")
+    st.markdown("### Best Model")
     st.write("Logistic Regression")
 
     st.markdown("### Features")
@@ -37,17 +37,17 @@ with st.sidebar:
     - Training Intensity
     """)
 
-st.title("🏃 Athlete Fatigue Risk Prediction")
+st.title("🏃 Athlete Fatigue Risk Detection System")
 
 st.markdown(
-    "Enter the athlete's physiological and training metrics to predict fatigue risk."
+    "Enter the athlete's sensor and training metrics to predict fatigue risk."
 )
 
 
 st.info("""
 **Workflow**
 
-Athlete Data → Preprocessing → Model Inference → Fatigue Risk Prediction
+Athlete Data → Preprocessing → Model Inference → Fatigue Risk Detection
 """)
 
 st.markdown("---")
